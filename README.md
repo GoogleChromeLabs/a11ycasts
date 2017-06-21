@@ -2,7 +2,7 @@
 
 ## Examples
 
-- Accessible Modal Dialogs
+- [Accessible Modal Dialogs](https://github.com/GoogleChrome/a11ycasts/tree/master/examples/modals)
 
 ## License
 
