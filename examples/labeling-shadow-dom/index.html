@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Labeling Shadow DOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div>
+      <!-- Unfortunately this doesn't work :( -->
+      <label for="without-label">First Name</label>
+      <element-without-label id="without-label"></element-without-label>
+    </div>
+
+    <div>
+      <element-with-label label="Username"></element-with-label>
+    </div>
+
+    <div>
+      <element-with-aria-label label="Favorite"></element-with-aria-label>
+    </div>
+
+    <script src="./element-without-label.js"></script>
+    <script src="./element-with-label.js"></script>
+    <script src="./element-with-aria-label.js"></script>
+  </body>
+</html>
