@@ -1,0 +1,87 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+}
+
+#side-nav-label {
+  display: block;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0 15px 22px;
+  font-weight: 700;
+}
+
+nav {
+  background: white;
+  min-width: 200px;
+  border-right: 1px solid #e0e0e0;
+}
+
+nav a {
+  display: block;
+  padding: 15px 0 15px 22px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  background: black;
+  color: white;
+}
+
+main {
+  flex: 1;
+}
+
+.contain {
+  width: 760px;
+  margin: 0 auto;
+}
+
+header {
+  height: 256px;
+  display: flex;
+  align-items: center;
+}
+
+.zombies header {
+  background-color: #33691E;
+}
+
+.hipsters header {
+  background-color: #00796B;
+}
+
+.bacon header {
+  background-color: #C62828;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 56px;
+  font-weight: normal;
+}
+
+h1:focus {
+  outline: none;
+}
+
+section {
+  margin-top: 56px;
+}

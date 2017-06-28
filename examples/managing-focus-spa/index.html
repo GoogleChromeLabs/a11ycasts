@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Managing Focus SPA</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- Our super simple single-page web app (SPA) -->
+  <div class="wrapper">
+    <nav id="side-nav" aria-labelledby="menu-label">
+      <span id="side-nav-label">Menu</span>
+      <a href="/zombies">Zombies</a>
+      <a href="/hipsters">Hipsters</a>
+      <a href="/bacon">Bacon</a>
+    </nav>
+    <main></main>
+  </div>
+
+  <!-- Page templates -->
+  <template id="zombies-template">
+    <article class="zombies">
+      <header>
+        <h1 tabindex="-1" class="contain">Zombie Ipsum</h1>
+      </header>
+      <section>
+        <div class="contain">
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+          <p>Cum <a href="#">horribilem</a> walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.</p>
+          <p>Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?</p>
+        </div>
+      </section>
+    </article>
+  </template>
+  <template id="hipsters-template">
+    <article class="hipsters">
+      <header>
+        <h1 tabindex="-1" class="contain">Hipster Ipsum</h1>
+      </header>
+      <section>
+        <div class="contain">
+          <p>Butcher aesthetic photo booth coloring book lumbersexual squid banjo kogi shaman hella jean shorts. Photo booth prism polaroid, seitan PBR&B iceland irony you probably haven't heard of them. Mustache cold-pressed disrupt flexitarian lyft XOXO. Chillwave humblebrag authentic green juice XOXO la croix copper mug cardigan. Listicle salvia gentrify poutine, selfies messenger bag art party semiotics. Stumptown cloud bread sriracha banjo leggings hell of. Before they sold out cornhole intelligentsia pop-up narwhal mumblecore vice pabst tousled celiac franzen cold-pressed shabby chic ethical brooklyn. Sriracha humblebrag migas everyday carry.</p>
+          <p>Affogato 3 <a href="#">wolf moon</a> mumblecore kale chips tilde. Gochujang cold-pressed trust fund, palo santo irony activated charcoal la croix try-hard unicorn heirloom vegan beard iPhone gastropub. Master cleanse locavore gluten-free edison bulb cold-pressed activated charcoal, kitsch chia single-origin coffee roof party lomo pour-over vape pork belly waistcoat. Fingerstache gochujang forage, offal poutine meh brunch lyft schlitz enamel pin readymade. Yuccie food truck plaid next level glossier dreamcatcher. Ennui forage swag, vape flannel photo booth normcore brooklyn etsy. Scenester deep v shoreditch single-origin coffee, snackwave chia hot.</p>
+          <p>Roof party gluten-free drinking vinegar kogi activated charcoal. Activated charcoal 8-bit prism chartreuse. Letterpress poutine DIY tattooed kinfolk migas. Narwhal kitsch pork belly paleo everyday carry helvetica you probably haven't heard of them asymmetrical lyft quinoa photo booth fanny pack 8-bit humblebrag cloud bread. Helvetica ugh XOXO quinoa. Lomo cronut hot chicken, distillery try-hard poke palo santo. Cliche 90's pickled flexitarian kinfolk. Vinyl ethical quinoa leggings offal gochujang before they sold out. Forage cornhole ethical pug hella wayfarers 3 wolf moon cred quinoa. Truffaut synth hexagon, hammock ramps bushwick.</p>
+        </div>
+      </section>
+    </article>
+  </template>
+  <template id="bacon-template">
+    <article class="bacon">
+      <header>
+        <h1 tabindex="-1" class="contain">Bacon Ipsum</h1>
+      </header>
+      <section>
+        <div class="contain">
+          <p>Bacon ipsum dolor amet alcatra ham tongue landjaeger brisket flank. Tenderloin turkey pork chop beef alcatra, rump andouille spare ribs prosciutto chicken burgdoggen. Andouille ribeye sirloin tenderloin, pig flank boudin alcatra shank ball tip landjaeger strip steak short ribs leberkas tri-tip. Shankle pork loin pork chop drumstick turducken ham hock. Hamburger spare ribs rump, bacon porchetta kielbasa jowl tail venison shoulder pastrami frankfurter drumstick. Biltong cow salami leberkas tail. Meatball corned beef cupim, boudin pastrami rump sirloin turkey drumstick tenderloin bacon tri-tip.</p>
+          <p>Salami biltong pig <a href="#">hamburger meatball</a>. Meatball ham kevin leberkas. Cupim cow sausage porchetta. Flank chicken ham hock beef ribs tongue. Kielbasa pork belly porchetta prosciutto ribeye burgdoggen pork loin frankfurter bacon beef ribs. Pancetta pork loin cow flank, cupim pastrami pig prosciutto. Jerky spare ribs tongue brisket cupim ham hock bresaola landjaeger ball tip corned beef tail filet mignon. Tenderloin turducken swine, bresaola corned beef sausage filet mignon burgdoggen frankfurter pork loin pork chop strip steak chuck shoulder boudin. Meatball pork belly andouille pastrami t-bone tri-tip, rump short ribs shoulder beef ribs burgdoggen turkey kielbasa.</p>
+          <p>Salami tri-tip beef ribs drumstick capicola jowl turkey, filet mignon brisket short ribs jerky pig landjaeger. Short ribs strip steak flank filet mignon shankle kevin jowl capicola tri-tip. Porchetta spare ribs shank ribeye tri-tip. Turkey porchetta t-bone bacon fatback. Jerky drumstick brisket capicola prosciutto beef ribs jowl meatball chuck fatback. Chicken tenderloin sausage ham shoulder burgdoggen ball tip tri-tip spare ribs chuck beef pancetta shank alcatra pig. Ground round frankfurter burgdoggen jowl leberkas sirloin. Ball tip cow short ribs, meatball landjaeger brisket cupim jerky shankle. Cupim hamburger pig beef ribs, swine meatball cow.</p>
+        </div>
+      </section>
+    </article>
+  </template>
+
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
