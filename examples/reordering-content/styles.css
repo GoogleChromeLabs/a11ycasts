@@ -1,0 +1,66 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: inline-block;
+  background: white;
+  border: 5px solid black;
+  padding: 18px;
+}
+
+.line {
+  display: flex;
+  margin: 10px;
+}
+
+.line > * {
+  margin: 4px;
+}
+
+/* Add for demo */
+.line-2 > button {
+  order: 1;
+}
+
+.line-2 > input {
+  order: 2;
+}
+
+.line-2 > label {
+  order: 3;
+}
+
+.line-3 > label {
+  order: 1;
+}
+
+.line-3 > button {
+  order: 2;
+}
+
+.line-3 > input {
+  order: 3;
+}
+
+/* Add for second demo */
+.newsletter {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  padding: 8px;
+  color: white;
+  width: 100%;
+}
+
