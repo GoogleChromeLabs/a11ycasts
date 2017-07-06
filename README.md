@@ -2,7 +2,10 @@
 
 ## Examples
 
-- [Accessible Modal Dialogs](https://github.com/GoogleChrome/a11ycasts/tree/master/examples/modals)
+- [Accessible modal dialogs](https://github.com/GoogleChrome/a11ycasts/tree/master/examples/modals)
+- [How to label Shadow DOM](https://github.com/GoogleChrome/a11ycasts/tree/master/examples/labeling-shadow-dom)
+- [Reordering content](https://github.com/GoogleChrome/a11ycasts/tree/master/examples/reordering-content)
+- [Managing focus in a web app](https://github.com/GoogleChrome/a11ycasts/tree/master/examples/managing-focus-spa)
 
 ## License
 
