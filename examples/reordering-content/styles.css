@@ -29,7 +29,6 @@ body {
   margin: 4px;
 }
 
-/* Add for demo */
 .line-2 > button {
   order: 1;
 }
@@ -54,7 +53,6 @@ body {
   order: 3;
 }
 
-/* Add for second demo */
 .newsletter {
   position: absolute;
   bottom: 0;
