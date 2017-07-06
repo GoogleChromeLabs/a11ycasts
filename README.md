@@ -1,5 +1,10 @@
 # A11ycasts
 
+## The Show
+
+[A11ycasts](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+is a fortnightly YouTube series covering web accessibility.
+
 ## Examples
 
 - [Accessible modal dialogs](https://github.com/GoogleChrome/a11ycasts/tree/master/examples/modals)
